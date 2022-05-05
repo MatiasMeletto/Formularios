@@ -92,7 +92,7 @@ namespace WindowsFormsApp1
             // dateTimePicker1
             // 
             this.dateTimePicker1.Location = new System.Drawing.Point(26, 170);
-            this.dateTimePicker1.MaxDate = new System.DateTime(2022, 4, 27, 0, 0, 0, 0);
+            this.dateTimePicker1.MaxDate = new System.DateTime(2022, 5, 4, 0, 0, 0, 0);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker1.TabIndex = 5;
@@ -146,6 +146,7 @@ namespace WindowsFormsApp1
             this.VistaDeLista.Name = "VistaDeLista";
             this.VistaDeLista.Size = new System.Drawing.Size(466, 268);
             this.VistaDeLista.TabIndex = 11;
+            this.VistaDeLista.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.VistaDeLista_CellDoubleClick);
             // 
             // btnCancelar
             // 
@@ -200,6 +201,7 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.btnAceptar);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.VistaDeLista)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
